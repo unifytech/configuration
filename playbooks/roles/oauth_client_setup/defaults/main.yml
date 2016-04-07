@@ -41,6 +41,12 @@ oauth_client_setup_oauth2_clients:
         id: "{{ CREDENTIALS_SOCIAL_AUTH_EDX_OIDC_KEY }}",
         secret: "{{ CREDENTIALS_SOCIAL_AUTH_EDX_OIDC_SECRET }}"
       }
+    - {
+        name: "{{ discovery_service_name | default('None') }}",
+        url_root: "{{ DISCOVERY_URL_ROOT }}",
+        id: "{{ DISCOVERY_SOCIAL_AUTH_EDX_OIDC_KEY }}",
+        secret: "{{ DISCOVERY_SOCIAL_AUTH_EDX_OIDC_SECRET }}"
+    }
 
 #
 # OS packages
