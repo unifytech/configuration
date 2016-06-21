@@ -9,3 +9,5 @@
   roles:
     - aws
     - tools_jenkins
+    - role: splunkforwarder
+      when: COMMON_ENABLE_SPLUNKFORWARDER
